@@ -74,3 +74,8 @@
             - [ ] 可視化
         - [ ] データの入手
         - [ ] オンラインで公開
+
+## 作成ノート
+
+* https://github.community/t/getting-started-with-github-pages-part-3-local-development-with-github-pages/10191
+* https://github.com/github/pages-gem
