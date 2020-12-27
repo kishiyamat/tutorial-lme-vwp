@@ -1,2 +1,3 @@
 *.xml
-*.html
+_site/*.html
+_site/index.html
