@@ -1,0 +1,44 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% feed_meta %}
+ 
+  <!-- custom title from page -->
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <!-- KaTeX CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/{{ site.katex-version }}/katex.min.css" />
+  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/{{ site.jquery-version }}/jquery.min.js"></script>
+  <script>
+    (function() {
+        if(typeof jQuery=='undefined') {
+            document.write('<sc'
+			   + 'ript src="/js/jquery.min.js"></sc'
+			   + 'ript>');
+        }
+    }).call(this);
+  </script>
+
+  <!-- Bootstrap JS script -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/{{ site.bootstrap-version }}/js/bootstrap.min.js"></script>
+  <script>
+    (function() {
+	  if (typeof($.fn.modal) === 'undefined') {
+	    document.write('<sc'
+			   + 'ript async src="/js/bootstrap.min.js"></sc'
+			   + 'ript>');
+	  }
+    }).call(this);
+  </script>
+
+  <!-- KaTeX JS http://sekika.github.io/2017/05/01/katex-equation/ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/{{ site.katex-version }}/katex.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/{{ site.katex-version }}/contrib/auto-render.min.js"></script>
+  
+  <!-- from http://kivantium.hateblo.jp/entry/2016/11/18/142840 -->
+  <script>$(document).ready(function(){renderMathInElement(document.body,{delimiters: [{left: "[[", right: "]]", display: true},{left: "$", right: "$", display: false}]})});</script>
+
+</head>
