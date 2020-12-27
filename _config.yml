@@ -1,3 +1,11 @@
 theme: jekyll-theme-cayman
 title: A Tutorial on LME and VWP
 description: 一般化線形混合モデルと視線計測実験のチュートリアル
+
+# Build settings
+markdown: kramdown
+# Customize navigation links
+header_pages:
+  - about.md
+  - works.md
+  - tags.md
