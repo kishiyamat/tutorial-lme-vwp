@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一般化線形混合モデル
+title: 線形混合効果モデル
 description: LMEの解説ページ
 ---
 
