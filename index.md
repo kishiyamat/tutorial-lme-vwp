@@ -38,6 +38,10 @@ description: 線形混合効果モデル・視線計測実験のオンライン�
 
 適宜更新
 
+- [Package ‘lme4’](https://cran.r-project.org/web/packages/lme4/lme4.pdf)
+- [lme4: Mixed-effects models in R.](https://www.r-project.org/nosvn/pandoc/lme4.html)
+- [datacamp / datacamp-light](https://github.com/datacamp/datacamp-light)
+
 <!---
 ### Misc.
 

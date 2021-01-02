@@ -8,9 +8,30 @@ description: LMEの解説ページ
 
 ## はじめに
 
+> Description
+> lme4 provides functions for fitting and analyzing mixed models: linear (lmer), generalized linear
+> (glmer) and nonlinear (nlmer.)
+
+はい。
+
+> `lmer` Fit Linear Mixed-Effects Models
+
+はい。
+
+> Description
+> Fit a linear mixed-effects model (LMM) to data, via REML or maximum likelihood.
+
+はい。
+
+> Usage
+> `lmer(formula, data = NULL, REML = TRUE, control = lmerControl(),
+> start = NULL, verbose = 0L, subset, weights, na.action,
+> offset, contrasts = NULL, devFunOnly = FALSE)`
+
 <!--
 5w1h
 -->
+
 ### 本チュートリアルの動機
 
 この資料は視線計測実験のチュートリアルの前座で、
