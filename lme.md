@@ -4,9 +4,33 @@ title: 線形混合効果モデル
 description: LMEの解説ページ
 ---
 
-{:toc}
+## 背景
 
-## はじめに
+
+<div data-datacamp-exercise data-lang="r">
+<code data-type="pre-exercise-code">
+    # This will get executed each time the exercise gets initialized
+    b = 6
+</code>
+<code data-type="sample-code">
+    # Create a variable a, equal to 5
+    # Print out a
+</code>
+<code data-type="solution">
+    # Create a variable a, equal to 5
+    a <- 5
+    # Print out a
+    print(a)
+</code>
+<code data-type="sct">
+    test_object("a")
+    test_function("print")
+    success_msg("Great job!")
+</code>
+<div data-type="hint">Use the assignment operator (<code><-</code>) to create the variable <code>a</code>.</div>
+</div>
+## 動機
+## 構成
 
 > Description
 > lme4 provides functions for fitting and analyzing mixed models: linear (lmer), generalized linear
@@ -32,7 +56,6 @@ description: LMEの解説ページ
 5w1h
 -->
 
-### 本チュートリアルの動機
 
 この資料は視線計測実験のチュートリアルの前座で、
 実験の後に通常かける分析についてのチュートリアルです。
