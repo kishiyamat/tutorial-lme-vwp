@@ -74,6 +74,15 @@ description: 線形混合効果モデル・視線計測実験のオンライン�
 - [lme4: Mixed-effects models in R.](https://www.r-project.org/nosvn/pandoc/lme4.html)
 - [datacamp / datacamp-light](https://github.com/datacamp/datacamp-light)
 
+
+## Contributions
+
+このサイトのソースコードは[GitHub][home]で管理しています。
+オープンな状態なので、もし改善点があれば[Issues][issues]に投稿してください。
+
+[home]: https://github.com/kishiyamat/tutorial-lme-vwp/tree/gh-pages
+[issues]: https://github.com/kishiyamat/tutorial-lme-vwp/issues
+
 <!---
 ### Misc.
 
