@@ -1,10 +1,12 @@
 ---
-layout: default
+layout: post
 title: 視線計測実験
 description: VWPの解説ページ
 ---
 
-## 作業予定地
+## 背景
+## 動機
+## 構成
 
 [back](./)
 

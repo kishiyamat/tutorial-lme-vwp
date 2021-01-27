@@ -1,2 +1,4 @@
 *.xml
-*.html
+_site/*.html
+*swp
+.Rhistory
