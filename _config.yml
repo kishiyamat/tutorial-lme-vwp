@@ -1,0 +1,20 @@
+theme: jekyll-theme-cayman
+title: A Tutorial on LME and VWP
+description: 一般化線形混合モデルと視線計測実験のチュートリアル
+github_username: kishiyamat
+
+# Versions of JavaScript
+bootstrap-version: "3.3.7" # Bootstrap http://getbootstrap.com/getting-started/
+jquery-version: "3.2.1" # jQuery https://jquery.com/download/
+katex-version: "0.8.3" # KaTeX https://github.com/Khan/KaTeX/releases
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Customize navigation links
+header_pages:
+  - about.md
+  - works.md
+  - tags.md

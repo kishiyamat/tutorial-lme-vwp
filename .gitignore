@@ -1,0 +1,4 @@
+*.xml
+_site/*.html
+*swp
+.Rhistory
