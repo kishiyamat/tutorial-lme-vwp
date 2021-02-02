@@ -77,7 +77,7 @@ description: 線形混合効果モデル・視線計測実験のオンライン�
 このサイトのソースコードは[GitHub][home]で管理しています。
 オープンな状態なので、もし改善点があれば[Issues][issues]に投稿してください。
 
-[lme](https://www.r-project.org/nosvn/pandoc/lme4.html)
+[lme]: https://www.r-project.org/nosvn/pandoc/lme4.html
 [lme_pdf]: https://cran.r-project.org/web/packages/lme4/lme4.pdf
 [dc]: https://github.com/datacamp/datacamp-light
 [home]: https://github.com/kishiyamat/tutorial-lme-vwp/tree/gh-pages
