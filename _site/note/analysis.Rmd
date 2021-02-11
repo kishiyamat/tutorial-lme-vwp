@@ -1,0 +1,96 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(readr)
+library(dplyr)
+library(ggplot2)
+```
+
+## E-Prime
+
+```{r}
+# MouseAOI E-Prime内で事前にスクリプトを書くことで実験時に計算している。
+sample <- read_delim("./eprime-data/sample.tsv", "\t", escape_double = FALSE, trim_ws = TRUE) %>%
+          select(c(ExperimentName, Subject, BlockList, Trial, Item, MouseAOI2, Stimulus.RT, Correct_key)) %>% 
+          mutate(Subject=as.factor(Subject),
+                 Correct_AOI=case_when(Correct_key=="d"~1,
+                                   Correct_key=="k"~2,
+                                   Correct_key=="c"~3,
+                                   Correct_key=="m"~4),
+                 Correct = MouseAOI2==Correct_AOI
+                 )
+  
+sample
+```
+
+## Eye-tacker
+
+* **xとyは左上が0(だったはず。)**
+
+```{r}
+data_path = './tobii-data/'
+temp = list.files(path=data_path, pattern="*.tsv")
+myfiles = lapply(paste0(data_path, temp), (function(path) read_delim(path, "\t", escape_double = FALSE, trim_ws = TRUE)))
+data = dplyr::bind_rows(myfiles)
+head(data)
+View(head(data, 50000))
+```
+
+
+やることは単純
+
+1. E-Primeのデータと対応づける(`Stimulus_Begin`->`Stimulus_End`がトライアル数分あるはず。)
+  1. subject と tid ごとに 0始まりの timestamp があればよい
+1. `Eye movement type` が Fixationになっている試行のみ取り出す(trialの対応を崩さないように)
+1. binを決めて(50ms)、`Recording timestamp` を
+
+```{r}
+begins = data %>% filter(Event=="Stimulus_Begin")
+ends = data %>% filter(Event=="Stimulus_End")
+
+n_subj = length(unique(begins$`Participant name`))
+n_trials = nrow(begins)/n_subj
+tid = rep(1:n_trials, n_subj)
+
+trials = data.frame(list(
+        pid = begins$`Participant name`,
+        tid = tid,
+        begins = begins$`Recording timestamp`,
+        ends = ends$`Recording timestamp`))
+trials
+```
+```{r}
+# nrow(trials)
+bin = 100
+
+trial_df_list <- vector("list", 5)
+for (row_idx in 1:nrow(head(trials, 5))){
+  t_i = trials[row_idx,] # trial_i
+  # データの抜き取り
+  data_i = data %>% filter(`Participant name`==as.character(t_i$pid) &
+                           `Recording timestamp` > t_i$begins &
+                           `Recording timestamp` < t_i$ends) %>% 
+                    mutate(tid = t_i$tid,
+                           ts = `Recording timestamp`-min(`Recording timestamp`)) # tidごとに0スタートにする
+  # データの加工はここでやりたいがここでやるとデータが膨らみすぎるので却下
+  trial_df_list[[row_idx]] = data_i
+}
+
+results = dplyr::bind_rows(trial_df_list)
+View(results)
+```
+
+1. 被験者、トライアル、bin ごとに視線のxとyを計算する.
+1. binは100で割って切り捨てるだけ
+1. 条件とかも残さないと
+
+```{r}
+bin = 100
+x = results %>% mutate(ts_bin = ts %/%bin*bin) %>% filter(`Eye movement type`=="Fixation")
+x_mean = aggregate(`Gaze point X`~`Participant name`+tid+ts_bin, x, mean)
+y_mean = aggregate(`Gaze point Y`~`Participant name`+tid+ts_bin, x, mean)
+# あるいはfixationのみに先に制限するか
+xy = merge(x_mean, y_mean)
+xy[with(xy, order(`Participant name`, tid, ts_bin)), ]
+```
+
+
