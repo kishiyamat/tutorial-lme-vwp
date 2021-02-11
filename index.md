@@ -46,16 +46,6 @@ description: 線形混合効果モデル・視線計測実験のオンライン�
 | 5    | [VWP の機材配置と実施][day-5]  | TBA                                       |                               |
 | 6    | [VWP の実験結果の分析][day-1]  | TBA                                       |                               |
 
-[yellow]: http://www.tkd-pbl.com/book/b279683.html
-[nakatani]: http://www.hituzi.co.jp/hituzibooks/ISBN978-4-89476-964-9.htm
-[day-1]: ./1.html
-[day-2]: ./2.html
-[day-3]: ./3.html
-[day-4]: ./4.html
-[day-5]: ./5.html
-[day-6]: ./6.html
-[tonton]: http://tonton.amaneku.com/list.php?id=20210131034707_wvCq57
-
 ## 今後の予定
 
 * 2020年12月
@@ -75,11 +65,11 @@ description: 線形混合効果モデル・視線計測実験のオンライン�
 
 ## 参考資料 (subject to modification)
 
-- [Rで学ぶ統計学入門](http://www.tkd-pbl.com/book/b279683.html)
-- [パソコンがあればできる！ ことばの実験研究の方法](http://www.hituzi.co.jp/hituzibooks/ISBN978-4-89476-964-9.htm)
-- [Package ‘lme4’](https://cran.r-project.org/web/packages/lme4/lme4.pdf)
-- [lme4: Mixed-effects models in R.](https://www.r-project.org/nosvn/pandoc/lme4.html)
-- [datacamp / datacamp-light](https://github.com/datacamp/datacamp-light)
+- [Rで学ぶ統計学入門][yellow]
+- [パソコンがあればできる！ ことばの実験研究の方法][nakatani]
+- [Package ‘lme4’][lme_pdf]
+- [lme4: Mixed-effects models in R.][lme]
+- [datacamp / datacamp-light][dc]
 
 
 ## Contributions
@@ -87,8 +77,20 @@ description: 線形混合効果モデル・視線計測実験のオンライン�
 このサイトのソースコードは[GitHub][home]で管理しています。
 オープンな状態なので、もし改善点があれば[Issues][issues]に投稿してください。
 
+[lme]: https://www.r-project.org/nosvn/pandoc/lme4.html
+[lme_pdf]: https://cran.r-project.org/web/packages/lme4/lme4.pdf
+[dc]: https://github.com/datacamp/datacamp-light
 [home]: https://github.com/kishiyamat/tutorial-lme-vwp/tree/gh-pages
 [issues]: https://github.com/kishiyamat/tutorial-lme-vwp/issues
+[yellow]: http://www.tkd-pbl.com/book/b279683.html
+[nakatani]: http://www.hituzi.co.jp/hituzibooks/ISBN978-4-89476-964-9.htm
+[day-1]: ./1.html
+[day-2]: ./2.html
+[day-3]: ./3.html
+[day-4]: ./4.html
+[day-5]: ./5.html
+[day-6]: ./6.html
+[tonton]: http://tonton.amaneku.com/list.php?id=20210131034707_wvCq57
 
 <!---
 ### Misc.
