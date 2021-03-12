@@ -95,10 +95,26 @@ description: 線形混合効果モデル・視線計測実験のオンライン�
 [day-6]: ./6.html
 [tonton]: http://tonton.amaneku.com/list.php?id=20210131034707_wvCq57
 
+## 謝辞
+
+本ウェブサイト及び付随する資料は東京大学による
+『オンキャンパスジョブを活用した修学支援事業』
+の一貫として作成しました。
+[東京大学大学院 言語情報科学専攻 アカデミック・サポーター](http://ut-oncampusjob.chips.jp/)
+というウェブサイトもあり、様々な事業があります。
+この機会を設けてくださった大学と専攻そしてもちろん
+多方面でご尽力くださった広瀬友紀教授に感謝申し上げます。
+実験や統計分析に対する負担と記述的な制約を減らせれば幸いです。
+また、資料を `r-wakalang` というコミュニティで共有したところ、
+分かりづらい点のフィードバックもいただきました。
+こちらもこの場を借りて感謝申し上げます。
+
 <!---
 ### Misc.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kishiyamat/tutorial-lme-vwp/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your
+[repository settings](https://github.com/kishiyamat/tutorial-lme-vwp/settings). 
+The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
