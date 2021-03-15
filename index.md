@@ -33,7 +33,7 @@ description: 線形混合効果モデル・視線計測実験のオンライン�
 1. ハンズオンは code camp
 -->
 
-## シラバス
+## LME資料
 
 日程は現在調整中です。決まり次第確定させます。
 また、Readingsは「参考になります」程度であって、
@@ -45,9 +45,26 @@ description: 線形混合効果モデル・視線計測実験のオンライン�
 | 1    | [Rと統計の入門       ][day-1]  | [Rで学ぶ統計学入門][yellow] の 1, 8, 9章  |  3/12(金) の 13:00 -- 15:00   |
 | 2    | [一般化線形モデル    ][day-2]  | [Rで学ぶ統計学入門][yellow] の 10章       |  3/12(金) の 13:00 -- 15:00   |
 | 3    | [一般化線形混合モデル][day-3]  | [Rで学ぶ統計学入門][yellow] の 11章       |  3/12(金) の 13:00 -- 15:00   |
+
+以下の動画はチュートリアル当日を録画、編集したものです。
+YouTube上にある詳細に目次を記述したので、
+上のURLと動画を参考にしながら学習を進めてもらえれば幸いです。
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cwS_SVy4ZaM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+## VWP資料
+
+| Unit | Topic                          | Readings                                  | Date                          |
+|------|--------------------------------|-------------------------------------------|-------------------------------|
 | 4    | [対照実験の役割と VWP][day-4]  | [ことばの実験研究の方法][nakatani] の 1章 |   恐らくゼミの時間 (調整中)   |
 | 5    | [VWP の機材配置と実施][day-5]  | TBA                                       |   恐らくゼミの時間 (調整中)   |
 | 6    | [VWP の実験結果の分析][day-1]  | TBA                                       |   恐らくゼミの時間 (調整中)   |
+
+## 動画
+
+準備中
 
 ## 今後の予定
 
@@ -73,7 +90,6 @@ description: 線形混合効果モデル・視線計測実験のオンライン�
 - [Package ‘lme4’][lme_pdf]
 - [lme4: Mixed-effects models in R.][lme]
 - [datacamp / datacamp-light][dc]
-
 
 ## Contributions
 
