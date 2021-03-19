@@ -1,4 +1,6 @@
 *.xml
+_site/*.html
+*swp
 *.html
 note/tobii-data/*
 !note/tobii-data/.gitkeep
@@ -8,4 +10,5 @@ note/eprime-data/*
 *.Rproj
 *.DS_Store
 *.Rhistory
+.Rproj.user
 
