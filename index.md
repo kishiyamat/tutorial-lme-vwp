@@ -25,6 +25,8 @@ description: 線形混合効果モデル・視線計測実験のオンライン�
 また成果を活かした技術資料および、
 トレーニング課題(サンプル実験を含む)の作成を⾏い
 オンライン媒体で共有します。
+**なお、このウェブページはデモですので、
+将来的にURLが変更される可能性があります。**
 
 <!--
 150,000で50,000で4週と考えると12週分のコマになる。
@@ -94,7 +96,8 @@ N/A
 ## Contributions
 
 このサイトのソースコードは[GitHub][home]で管理しています。
-オープンな状態なので、もし改善点があれば[Issues][issues]に投稿してください。
+オープンな状態なので、もし改善点や疑問点、
+あるいは資料の追加があれば[Issues][issues]に投稿してください。
 
 [lme]: https://www.r-project.org/nosvn/pandoc/lme4.html
 [lme_pdf]: https://cran.r-project.org/web/packages/lme4/lme4.pdf
