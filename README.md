@@ -1,6 +1,16 @@
 # tutorial-lme-vwp
 
-- [Home Page](https://kishiyamat.github.io/tutorial-lme-vwp/)
-- [Branch](https://github.com/kishiyamat/tutorial-lme-vwp/tree/gh-pages)
+本リポジトリは統計や実験の習得を容易にするため、
+オープンソースとして資料を作成、更新していくことを目的として
+作成されており、作成された資料自体は
+[A Tutorial on LME and VWP ](https://kishiyamat.github.io/tutorial-lme-vwp/)
+で確認できます。
+しかしながら、このページはあくまでも編集の結果を見やすくするためのデモです。
+GitHub Pages は
+「ウェブサイトを運営するための無料のウェブホスティングサービス」
+ではないので、
+将来的に異なるドメインで上記のデモをホストすることを想定しています。
+これは資料のURL、リポジトリ名やファイル名が将来的に変更される可能性を含むので
+ご注意ください。
 
 <!--bundle exec jekyll serve-->
